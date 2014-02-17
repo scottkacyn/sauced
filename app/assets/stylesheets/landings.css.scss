@@ -2,6 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Home */
+
+.banner {
+    background: rgba(0,0,0,0.7);
+    margin-top: -20px;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.banner p {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.splash {
+    width: 100%;
+    min-height: 500px;
+}
+
 /* Menu */
 
 .menu, .menu-section-items {

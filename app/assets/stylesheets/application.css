@@ -29,6 +29,30 @@ body {
    margin: 0 auto;
 }
 
+/* Footer */
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 50px;
+    background: #5F1515;
+}
+
+.footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li {
+    float: left;
+    width: 33%;
+}
+
+.footer ul li, .footer ul li > a {
+    color: #fff;
+    font-weight: normal;
+}
+
 /* Boostrap Overrides */
 
 .navbar.navbar-default {
