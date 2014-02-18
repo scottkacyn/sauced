@@ -12,7 +12,12 @@
  *= require_tree .
  */
 
+* {
+   margin: 0;
+}
+
 html, body {
+   height: 100%;
    margin: 0;
    padding: 0;
 }
@@ -27,15 +32,24 @@ body {
 .wrapper {
    max-width: 1010px;
    margin: 0 auto;
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -80px;
+}
+
+.push {
+   height: 80px;
 }
 
 /* Footer */
 
 .footer {
+    position: relative;
     width: 100%;
-    min-height: 100px;
-    padding: 50px;
-    background: #5F1515;
+    height: 80px;
+    background: #fafafa;
+    bottom: 0;
 }
 
 .footer ul {
@@ -45,11 +59,12 @@ body {
 
 .footer ul li {
     float: left;
+    line-height: 80px;
     width: 33%;
 }
 
 .footer ul li, .footer ul li > a {
-    color: #fff;
+    color: #5F1515;
     font-weight: normal;
 }
 
@@ -75,4 +90,26 @@ body {
 
 .navbar.navbar-default .navbar-brand:hover, .navbar.navbar-default .navbar-nav>li>a:hover, .navbar-nav>li>a:hover, .navbar-nav > li > a:hover {
    color: #ddd;
+}
+
+.nav-tabs.nav-justified>li>a {
+   background-color: #fff;
+}
+
+.nav-tabs.nav-justified>li>a {
+   border-bottom: none;
+   border-radius: 0 !important;
+}
+
+.nav-tabs.nav-justified>li.active>a {
+   background-color: #eee;
+   border-color: transparent;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+   color: #111;
+   background-color: #eee;
+   border: none;
+   border-bottom-color: transparent;
+   cursor: default;
 }

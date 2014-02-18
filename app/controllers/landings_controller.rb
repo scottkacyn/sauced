@@ -8,6 +8,15 @@ class LandingsController < ApplicationController
   def menu
   end
 
+  def pricing
+  end
+
+  def faq
+  end
+
+  def gallery
+  end
+
   def contact
   end
 end
